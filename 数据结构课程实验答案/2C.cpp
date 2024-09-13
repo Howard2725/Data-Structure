@@ -1,3 +1,49 @@
+/*Description
+Please implement a simple program to manage a digital library. You  need to realize the operations on the library  including:  
+
+(1)  Add a book: Each book is recorded as a triple (name, author,  price). The name and author of a book is presented as a string and the price is  presented as a float number.
+
+(2)    Remove a book given its  name and author.
+
+(3)    Find a book given its  name. If multiple books have a same name, all the matched books should be  found.
+
+Input
+The input consists of T operations. The number T is given in the  first line of the input. Each one of the following T lines contains a string  representing an operation. Each operation is belonging to one of the following  3  formats:
+
+(1) ADD (name) (author)  (price)
+
+(2) REMOVE (name)  (author)
+
+(3) FIND  (name)
+
+Output
+The output consists of T lines. The No i  lines presents the result of the No. i operation. The result is belonging to one  of the following 3 cases:
+
+(1) The case when the operation input is ¡®ADD (name) (author) (price)¡¯. If  there is another book in the library with the same name and author as the input,  print ¡®FAIL¡¯. Otherwise, add the book into the library and print  ¡®SUCCESS¡¯
+
+(2) The case when the operation input is ¡®REMOVE (name) (author)¡¯. If  there is no book in the library with the same name and author as the input,  print ¡®FAIL¡¯. Otherwise, remove the book from the library and print  ¡®SUCCESS¡¯.
+
+(3) The case when the operation input is ¡®FIND (name)¡¯. Print the  count of the books in the library with the name as the input.
+
+Sample Input
+6
+ADD (Data Structure) (Clifford A. Shaffer) (30.50)
+ADD (Data Structure) (Clifford A. Shaffer) (100.50)
+ADD (Data Structure) (Will A. Shaffer) (10.50)
+REMOVE (Data Structure) (Jimmy Lud)
+FIND (Data Structure) 
+REMOVE (Data Structure) (Will A. Shaffer)
+
+
+Sample Output
+SUCCESS
+FAIL
+SUCCESS
+FAIL
+2
+SUCCESS
+*/
+
 #include<iostream>
 #include<string>
 using namespace std;
